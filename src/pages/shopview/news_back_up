@@ -1,0 +1,90 @@
+{% extends 'page.html.twig' %}
+{% block title %}News | GingerCup{% endblock %}
+
+{% block javascript %}
+
+{% endblock %}
+
+{% block meta %}
+<meta name="description" itemprop="description" content="Promote your brand,create more awareness and revenue through disposable coffee cup advertising.Gingercup offers premium range of coffee paper cups & mugs." />
+<meta name="keywords" content="coffee cup advertising,paper cup advertising India,cup advertising,printed paper cups,Free Paper Cup Advertising,advertising coffee cup,advertising cup,coffee cup advertising,coffee mug advertising,ginger cups,advertising mug,paper cup media">
+<link rel="canonical" href="http://www.gingercup.com/news/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="News - GingerCup" />
+<meta property="og:url" content="http://www.gingercup.com/news/" />
+<meta property="og:site_name" content="GingerCup" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="News - GingerCup" />
+{% endblock %}
+
+
+  {% block body %}
+<section class="section clearfix page">
+<div class="">
+    <h1 class="text-center page-heading">News</h1>
+     <div class="row">
+        <div class="col-lg-3 text-center">
+             <img class="img-responsive" src="{{ asset('images/media/YourStory_LOGO.png') }}">
+        </div>
+        <div class="col-lg-9">
+            <h3 class="sub-title">The other side of a cup of coffee - story of a couple from Bangalore</h3>
+            <p class="page-text">Devleena and Deepak Bansal, the husband-wife duo has brought forth 'The other side' of a cup of coffee. A coffee lover would often wonder what goes behind the irresistible aroma a cup of coffee exudes. But this duo's foresight leverages what goes after a person gets a Cup a Joe in hand. It is with this concept that they started up GingerCup.</p>
+            <p>Read More here in <a title="Other side of a cup of coffee- GingerCup" href="https://community.yourstory.com/read/b5d31d530c/the-other-side-of-a-cup-of-coffee-story-of-a-couple-from-bangalore" target="_blank">*Yourstory</a></p>
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-lg-3 text-center">
+             <img class="img-responsive" src="{{ asset('images/media/afaqsLogo.png') }}">
+        </div>
+        <div class="col-lg-9">
+            <h3 class="sub-title">Cloviaâ€™s recent outdoor campaign in the online lingerie category hits the market with an innovative activation</h3>
+            <p class="page-text">There are some campaigns when we suddenly discover how much value the product/service adds to the life of the people using it. The inherent potential of that service is really a revelation for us too. Yumist marketing campaign was one such example. People really were in search of something that makes ordering daily meals on-demand using an App possible. â€˜Homely Meals cooked with loveâ€™ are a basic necessity for keeping good health especially for those who stay</p>
+            <p>Read More here in <a title="Cup Advertising By GingerCup" href="http://www.afaqs.com/news/story/46560_Whats-your-cup-size-asks-Clovia" target="_blank">Afaqs!</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 text-center">
+             <img class="img-responsive" src="{{ asset('images/media/techStory_LOGO.jpeg') }}">
+        </div>
+        <div class="col-lg-9">
+            <h3 class="sub-title">Offline marketing is like a breath of fresh air in today's times, where people are blindly jumping onto the Digital Bandwagon for the sake of it</h3>
+            <p class="page-text">Marketing activities are essential for every brand, regardless of its size. You need offline marketing to remain etched in the memories of your audience. In today's times, people have a short attention span of nearly 3 seconds on Digital Sphere. Offline marketing can help you enjoy larger attention span. Contrary to popular notion, you need not always spend big bucks to get this kind of an attention span.</p>
+           <p>Read More Why Offline marketing matters in <a title="Why Offline Marketing Matters?" href="http://techstory.in/offline-marketing/" target="_blank">TechStory</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 text-center">
+             <img class="img-responsive" src="{{ asset('images/media/YoSuccess_LOGO.png') }}">
+        </div>
+        <div class="col-lg-9">
+            <h3 class="sub-title">Work Hard To Get What You Like , Otherwise You Will Be Forced To Like What You Get.</h3>
+            <p class="page-text">A product of NIT Allahabad, one on India's premium technology institutions, Deepak Bansal firmly believes that without hard work &perseverance great things cannot be achieved. He started his career at Wipro and then led the technical team at Samsung India for more than 8 years</p>
+           <p>Read More here in <a title="deepak bansal-gingercup" href="http://www.yosuccess.com/interviews/deepak-bansal-gingercup/" target="_blank">Yosuccess</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 text-center">
+             <img class="img-responsive" src="{{ asset('images/media/yournib_LOGO.png') }}">
+        </div>
+        <div class="col-lg-9">
+            <h3 class="sub-title">There can be nothing as good as helping the poor in today's world. A couple of daysback, it was International Labour Day and I along with my friends was discussing a great deal of stuff to help the needy</h3>
+            <p class="page-text">There can be nothing as good as helping the poor in today's world. A couple of daysback, it was International Labour Day and I along with my friends was discussing a great deal of stuff to help the needy. Sadly, despite all our discussions, we didn't do anything for them. On the Labour Day itself, there was a lot of hullabaloo about being more sensitive and helpful towards the underprivileged on social networking sites and yet these discussions remained infertile. I feel, there is simply no use making noise about something you cannot do anything about. Our unfruitful talks and unproductive ideas do not change the fate of those who have to toil hard and still they barely get their both ends meet. Sad but true!</p>
+            <p>Read More here in <a title="Innovative Marketing Campaign â€“ GingerCup" href="http://yournib.com/innovative-marketing-campaign-gingercup/" target="_blank">Yournib</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 text-center">
+             <img class="img-responsive" src="{{ asset('images/media/tad-too_LOGO.png') }}">
+        </div>
+        <div class="col-lg-9">
+            <h3 class="sub-title">â€˜Whatâ€™s Your Cup Size?â€™ â€“ How this start-up GingerCup is Making Heads Turn With itâ€™s Coffee Cup Branding.</h3>
+            <p class="page-text">Advertising is all about connecting and when you connect with your audience, it's always the uncharted and unconventional ideas that stand out. In an era of increasingly digitized world, if you are not on the internet with a streaming social media timeline, you are simply nowhere in the race. This is where this innovative start up called Ginger Cup spreads its wings. Digital advertising is undeniably the in-thing, but how do you really bridge the gap between the mass and the class.</p>
+            <p>Read More here in <a title="Cup Advertising By GingerCup" href="http://www.tadtoonew.com/how-this-start-up-gingercup-is-making-heads-turn-with-its-coffee-cup-branding/" target="_blank">Tadtoonew</a></p>
+        </div>
+    </div>
+   
+
+ </div>
+</section>
+{% endblock %}

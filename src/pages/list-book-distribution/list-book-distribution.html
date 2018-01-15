@@ -1,0 +1,59 @@
+<!--
+  Generated template for the ListBookDistributionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"> </ion-icon>
+        </button>
+    
+    <ion-title>list-book-distribution</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-row>
+        
+      <ion-col col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3>
+      Books Name
+      </ion-col>
+      <ion-col col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3>
+        Quantity
+      </ion-col>
+      <ion-col col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3>
+         Date 
+          </ion-col>
+      <ion-col col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3>
+        Distributed
+      </ion-col>
+   
+    </ion-row>
+
+
+    <span *ngFor="let todaylist of todaybookdistributedlist" >   
+    <ion-row>
+        
+      <ion-col col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3>
+          {{ todaylist.bookname }}
+      </ion-col>
+      <ion-col col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3>
+          {{ todaylist.quantity }}
+      </ion-col>
+      <ion-col col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3>
+          {{ todaylist.entry_date }}
+          </ion-col>
+      <ion-col col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3>
+          {{ todaylist.distributed }}
+      </ion-col>
+   
+    </ion-row>
+  </span>
+
+</ion-content>

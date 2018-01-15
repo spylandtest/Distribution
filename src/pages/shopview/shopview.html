@@ -1,0 +1,57 @@
+<!--
+  Generated template for the ShopviewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu">  </ion-icon>
+    </button>
+    <ion-title text-center>{{ shop.shopname }}</ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="bookfont">
+        <h5 text-center class="totalprice">Total Balance</h5>
+        <h1 text-center > ₹ {{shop.balance}} </h1>
+
+    </div>
+
+
+<ion-list>
+  <!--<ion-item *ngFor="let shop of shopList" (click)="shopView(shop)">-->
+    <ion-item *ngIf="shop.shopname!='' && shop.shopname!=null && shop.shopname!='undefined'">
+   <!-- <p>{{ shop.shopname }}</p>
+    <p>{{ shop.ownername }}</p>
+    <p>{{ shop.shopaddress }}</p>
+    <p>{{ shop.mobileno }}</p>
+    <p>{{ shop.pincode }}</p>
+    <p>{{ shop.emailid }}</p> -->
+
+    <ion-row>
+        
+          <button ion-button class="submit-btn" full type="submit" (click)="shopbooks(shop.id,shop)" >Add Books</button>
+        
+      </ion-row>
+      <ion-row>
+          
+            <button ion-button class="submit-btn" full type="submit" (click)="addpaymentdetails(shop.id,shop)">ADD Payment</button>
+          
+        </ion-row>
+      <!--  <ion-row>
+          
+            <button ion-button class="submit-btn" full type="submit" (click)="viewtodaybook(shop.id)">View Books List</button>
+          
+        </ion-row>   -->
+    
+  </ion-item>
+</ion-list>
+
+</ion-content>

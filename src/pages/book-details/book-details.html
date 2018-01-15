@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-navbar>
+<button ion-button menuToggle>
+      <ion-icon name="menu"> </ion-icon>
+    </button>
+  
+    <ion-title>Add Book to Shop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+<form (ngSubmit)="bookdetails()" #bookDetailsForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+             <ion-item>
+               <ion-label floating>Book Name</ion-label>
+              <ion-input type="text" name="bookname" [(ngModel)]="bookDetailsCredentials.bookname" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Price</ion-label>
+               <ion-input type="text" name="price" [(ngModel)]="bookDetailsCredentials.price" required></ion-input>
+             </ion-item>
+             <ion-item>
+                <ion-label floating>companyName</ion-label>
+               <ion-input type="text" name="companyName" [(ngModel)]="bookDetailsCredentials.companyName" ></ion-input>
+             </ion-item> 
+            <!--<ion-item>
+              <h1></h1>
+          <ion-label>Author </ion-label>
+          <ion-select name="contributorId" [(ngModel)]="bookDetailsCredentials.contributorId" [compareWith]="">
+           <ion-option *ngFor="let author of authorList" [value]="author.id">{{ author.name }}</ion-option>
+           <ion-option [value]="1"> Raj </ion-option>
+           <ion-option [value]="2"> Kumar </ion-option>
+         
+          </ion-select>
+        </ion-item>
+       <ion-item>
+               <ion-label floating>Quantity</ion-label>
+              <ion-input type="text" name="totalquantity" [(ngModel)]="bookDetailsCredentials.totalquantity" required></ion-input>
+            </ion-item>
+          
+          <ion-item>
+               <ion-label floating>Description</ion-label>
+              <ion-input type="text" name="description" [(ngModel)]="bookDetailsCredentials.description" required></ion-input>
+            </ion-item>
+            <ion-item>
+               <ion-label floating>Publication Year</ion-label>
+              <ion-input type="text" name="publicationyear" [(ngModel)]="bookDetailsCredentials.publicationyear" required></ion-input>
+            </ion-item>
+            <ion-item>
+               <ion-label floating>Book Type</ion-label>
+              <ion-input type="text" name="booktype" [(ngModel)]="bookDetailsCredentials.booktype" required></ion-input>
+            </ion-item>
+            <ion-item>
+          <ion-label>Shop Name</ion-label>
+          <ion-select name="shopId" [(ngModel)]="bookDetailsCredentials.shopId" [compareWith]="">
+           <ion-option *ngFor="let shop of shopsList "   [value]="shop.id">{{shop.name}}</ion-option>
+           <!--<ion-option [value]="11"> sapna </ion-option>
+           <ion-option [value]="22"> pragathi </ion-option>
+          </ion-select>
+        </ion-item>-->
+         
+                                
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        
+          <button ion-button class="submit-btn" full type="submit" [disabled]="!bookDetailsForm.form.valid">Submit</button>
+        
+      </ion-row>
+      
+    </form>
+    </ion-content>

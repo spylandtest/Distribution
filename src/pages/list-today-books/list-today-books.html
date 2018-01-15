@@ -1,0 +1,175 @@
+<!--
+  Generated template for the ListTodayBooksPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  
+  <ion-toolbar>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="gotoHome()">
+            <ion-icon name="md-arrow-back"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>Books Management for Shop</ion-title>
+</ion-toolbar>
+
+
+</ion-header>
+
+
+<ion-content padding>
+
+  
+    
+
+    <form (ngSubmit)="updatequantitylist()" #todaybookForm="ngForm">
+        <ion-grid>
+            <ion-row>
+                
+              <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+              Books To Add
+              </ion-col>
+              <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+                Quantity
+              </ion-col>
+           
+            </ion-row>
+            <span *ngFor="let todaybook of todaybookList; let i=index" > 
+            <ion-row>
+               
+                    <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+               
+                        
+                        <ion-label>{{ todaybook.bookname }}</ion-label>
+                       <!-- <ion-checkbox [(ngModel)]="bookidlist[todaybook.bookid]" name="bookidlist"></ion-checkbox>-->
+                         
+                </ion-col>
+                <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+                <ion-item>
+                    <ion-input type="text" name="quantitylist" placeholder="enter quantity" [(ngModel)]="quantitylist[i]" ></ion-input>
+                 </ion-item>
+              </ion-col>
+              </ion-row>
+            </span> 
+         <!--     <ion-row>
+                  <ion-col col-6 col-sm col-xs col-md col-lg>
+                    Book2
+                  </ion-col>
+                  <ion-col col-6 col-sm col-xs col-md col-lg>
+                      <ion-item>
+                      <ion-input type="text" name="quantity"  required></ion-input>
+                      </ion-item><br/>
+                      <ion-row>
+                          
+                            <button ion-button class="submit-btn" full type="submit">Submitt</button>
+                          
+                        </ion-row>
+                  </ion-col>
+                  
+                </ion-row> -->
+                <ion-row>
+                  
+                <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+                Books To Return
+                </ion-col>
+                <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+                  Quantity 
+                </ion-col>
+             
+              </ion-row>
+              <span *ngFor="let todaybook of todaybookList; let j=index" > 
+              <ion-row>
+                 
+                      <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+                 
+                          
+                          <ion-label>{{ todaybook.bookname }}</ion-label>
+                         <!-- <ion-checkbox [(ngModel)]="bookidlist[todaybook.bookid]" name="bookidlist"></ion-checkbox>-->
+                           
+                  </ion-col>
+                  <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+                  <ion-item>
+                      <ion-input type="text" name="returnquantitylist" placeholder="enter quantity" [(ngModel)]="returnquantitylist[j]" ></ion-input>
+                   </ion-item>
+                </ion-col>
+                </ion-row>
+              </span> 
+
+
+                <ion-row>
+                    
+                      <button ion-button class="submit-btn" full type="submit">Submitt</button>
+                    
+                  </ion-row> 
+                  
+                 
+                 
+          </ion-grid>
+</form>
+<!--<ion-row>
+  
+    <button ion-button class="submit-btn" full type="submit" (click)="shopbooks(shopId,shop)" >back</button>
+  
+</ion-row>-->
+<!--
+<form (ngSubmit)="returnlistbook()" #returnbookForm="ngForm">
+    
+        
+
+  <ion-grid>
+      <ion-row>
+          
+        <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+        Books To Return
+        </ion-col>
+        <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+          Quantity
+        </ion-col>
+     
+      </ion-row>
+      <span *ngFor="let todaybook of todaybookList; let j=index" > 
+      <ion-row>
+         
+              <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+         
+                  
+                  <ion-label>{{ todaybook.bookname }}</ion-label>
+                  <ion-checkbox [(ngModel)]="bookidlist[todaybook.bookid]" name="bookidlist"></ion-checkbox>
+                   
+          </ion-col>
+          <ion-col col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6>
+          <ion-item>
+              <ion-input type="text" name="returnquantitylist" placeholder="enter quantity" [(ngModel)]="returnquantitylist[j]" ></ion-input>
+           </ion-item>
+        </ion-col>
+        </ion-row>
+      </span> 
+      <ion-row>
+            <ion-col col-6 col-sm col-xs col-md col-lg>
+              Book2
+            </ion-col>
+            <ion-col col-6 col-sm col-xs col-md col-lg>
+                <ion-item>
+                <ion-input type="text" name="quantity"  required></ion-input>
+                </ion-item><br/>
+                <ion-row>
+                    
+                      <button ion-button class="submit-btn" full type="submit">Submitt</button>
+                    
+                  </ion-row>
+            </ion-col>
+            
+          </ion-row> 
+          <ion-row>
+              
+                <button ion-button class="submit-btn" full type="submit">Submit</button>
+              
+            </ion-row> 
+    </ion-grid>
+</form> -->
+
+
+</ion-content>

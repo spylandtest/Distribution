@@ -1,5 +1,14 @@
 {
   "name": "Distribution",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "62e007a7",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost/api"
+    }
+  ],
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

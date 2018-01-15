@@ -1,0 +1,31 @@
+<!--
+  Generated template for the BookDetailsViewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"> </ion-icon>
+    </button>
+
+    <ion-title>Books List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+  <ion-item *ngFor="let book of bookList" (click)="bookView(book)">
+    <h2>{{ book.bookname }}</h2>
+   
+    <p item-right><i class="fa fa-inr" aria-hidden="true"></i> ₹ {{ book.price }}</p>
+   <!-- <p> {{ book.contributorName }}</p> -->
+ 
+  </ion-item>
+</ion-list>
+
+
+</ion-content>
